@@ -50,12 +50,12 @@ body3 = part((30,50,100),40,60,20)
 fruita = fruit()
 partlist = [head,body1,body2,body3] #All parts in a list for controlled
 
-fps = pygame.time.Clock() #timer
+timeTicker = pygame.time.Clock() #timer
 text2 = font2.render("GAME OVER",True,(255,0,0)) #game over text
 textrestart = font.render("Press Any Arrow Keys to Restart",True,(100,0,255)) #Restart Game
 
 while True:
-    fps.tick(10)
+    timeTicker.tick(10)
     screen.fill((0,0,0))
     text3 = font3.render("Score = " + str(point), True, (200, 0, 200))
     for event in pygame.event.get():
